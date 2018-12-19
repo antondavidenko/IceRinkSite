@@ -1,0 +1,20 @@
+﻿<script>
+    function validatelogoffForm()
+    {
+        var pageURL = window.location.href;
+
+        $.post("/php/auth.php?log_off", {})
+            .done(function (data) {
+                window.location.href = pageURL.substr(0, pageURL.indexOf("?")) + "?login=false";
+            });
+
+        return false;
+    }
+</script>
+
+<div class="dialog-message">
+    <form class="dialog-form" id="logoffForm" onsubmit="return validatelogoffForm()">
+    ВЫХОД?
+    <input type="submit" value="ДА">
+    </form>
+</div><br><br><br><br>

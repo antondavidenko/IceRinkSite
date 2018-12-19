@@ -1,0 +1,57 @@
+﻿<div class="content-text">
+    <div class="container">
+        <form id="dayForm" onsubmit="return validateDayForm()">
+            <label for="fday">День:</label>
+            <input class="short-input" type="text" id="fday" name="fday" placeholder="ДД.MM.ГГГГ" maxlength="10">
+            <input type="submit" value="ПОКАЗАТЬ ДЕНЬ">
+        </form>
+    </div>
+    <br>
+    <div class="container">
+        <form id="planForm">
+            РАСПИСАНИЕ НА ДЕНЬ: <span id="dayIdText"></span><br>
+            <input class="short-input" type="text" id="ftime1_1" name="ftime1_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime1_1)">
+            <input class="short-input" type="text" id="ftime1_2" name="ftime1_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime1_2)">
+            <input class="mid-input" type="text" id="fdesc1" name="fdesc1" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime2_1" name="ftime2_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime2_1)">
+            <input class="short-input" type="text" id="ftime2_2" name="ftime2_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime2_2)">
+            <input class="mid-input" type="text" id="fdesc2" name="fdesc2" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime3_1" name="ftime3_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime3_1)">
+            <input class="short-input" type="text" id="ftime3_2" name="ftime3_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime3_2)">
+            <input class="mid-input" type="text" id="fdesc3" name="fdesc3" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime4_1" name="ftime4_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime4_1)">
+            <input class="short-input" type="text" id="ftime4_2" name="ftime4_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime4_2)">
+            <input class="mid-input" type="text" id="fdesc4" name="fdesc4" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime5_1" name="ftime5_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime5_1)">
+            <input class="short-input" type="text" id="ftime5_2" name="ftime5_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime5_2)">
+            <input class="mid-input" type="text" id="fdesc5" name="fdesc5" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime6_1" name="ftime6_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime6_1)">
+            <input class="short-input" type="text" id="ftime6_2" name="ftime6_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime6_2)">
+            <input class="mid-input" type="text" id="fdesc6" name="fdesc6" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime7_1" name="ftime7_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime7_1)">
+            <input class="short-input" type="text" id="ftime7_2" name="ftime7_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime7_2)">
+            <input class="mid-input" type="text" id="fdesc7" name="fdesc7" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime8_1" name="ftime8_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime8_1)">
+            <input class="short-input" type="text" id="ftime8_2" name="ftime8_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime8_2)">
+            <input class="mid-input" type="text" id="fdesc8" name="fdesc8" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime9_1" name="ftime9_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime9_1)">
+            <input class="short-input" type="text" id="ftime9_2" name="ftime9_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime9_2)">
+            <input class="mid-input" type="text" id="fdesc9" name="fdesc9" placeholder="Активность" maxlength="60">
+            <br>
+            <input class="short-input" type="text" id="ftime10_1" name="ftime10_1" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime10_1)">
+            <input class="short-input" type="text" id="ftime10_2" name="ftime10_2" placeholder="ЧЧ:MM" maxlength="5" oninput="inputTime(ftime10_2)">
+            <input class="mid-input" type="text" id="fdesc10" name="fdesc10" placeholder="Активность" maxlength="60">
+        </form>
+        <form id="saveForm" onsubmit="return flase;">
+        <input type="button" value="СОХРАНИТЬ" onclick="saveDayData()">
+        </form>
+    </div>
+</div>

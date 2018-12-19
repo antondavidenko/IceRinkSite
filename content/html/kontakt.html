@@ -1,0 +1,71 @@
+﻿<script>
+    function validateContactForm() {
+        var res = true;
+
+        var fname = document.forms["contactForm"]["fname"].value;
+        if (fname == "") {
+            alert("Name muss ausgefüllt werden");
+            res = false;
+        }
+        var femail = document.forms["contactForm"]["Email"].value;
+
+        if ((femail == "")||(!validateEmail(femail))) {
+            alert("E-Mail muss richtig ausgefüllt werden");
+            res = false;
+        }
+
+        var fmessage = document.forms["contactForm"]["Message"].value;
+        if (fmessage == "") {
+            alert("Nachricht muss ausgefüllt werden");
+            res = false;
+        }
+
+        return res;
+    }
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+</script>
+
+<div class="content-text">
+    <table class="gray-bg"><tr>
+        <td class="content impressum-text">
+    Eissport Bad Kissingen GmbH<br>
+    Oskar-von-Miller-Straße 9<br>
+    97688 Bad Kissingen<br>
+    Tel.: 0971/7859025<br>
+    Fax: 0971/7859025<br>
+    E-Mail: <a href="mailto:info.eissporthalle.bk@gmail.com">info.eissporthalle.bk@gmail.com</a><br>
+    USt-ID-Nr.: DE313846623<br>
+    <a href="http://www.eissport-badkissingen.de">http://www.eissport-badkissingen.de</a><br>
+    <br>
+    Verantwortlich für den Inhalt:<br>
+    Eissport Bad Kissingen GmbH<br>
+        </td>
+        <td><img class="img-contact" src="./content/img/contact_.jpg"></td>
+    </tr></table>
+    <br>
+    <div class="content-title">Kontakt</div>
+    Wenn Sie noch irgendwelche Frage oder  Vorschläge haben, dann können Sie mit dem folgenden Formular einen Kontakt mit uns aufnehmen.<br>
+    Bitte füllen Sie das untere Formular aus und klicken Sie auf „Abschicken“.  Wir antworten Ihnen so bald wie möglich.
+    <br><br>
+    <div class="container">
+        <form id="contactForm" onsubmit="return validateContactForm()">
+            <input id="action" name="action" type="hidden" value="sendmessage">
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Ihr Name" maxlength="50">
+
+            <label for="femail">Email</label>
+            <input type="text" id="femail" name="femail" placeholder="Ihre E-mail" maxlength="50">
+
+            <label for="fmessage">Nachricht</label>
+            <textarea id="fmessage" name="fmessage" placeholder="Schreiben Sie bitte Ihre Nachricht..." style="height:200px" maxlength="1000"></textarea>
+
+            <input type="submit" value="Abschicken">
+        </form>
+    </div>
+</div>
+<!-- info.eissporthalle.bk@gmail.com -->

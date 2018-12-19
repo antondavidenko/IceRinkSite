@@ -1,0 +1,42 @@
+﻿<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113163889-1"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-113163889-1');
+		</script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Eissport - Bad Kissingen</title>
+
+		<script type="text/javascript" src="lib/jquery.js"></script>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="main.js"></script>
+		<script src="content/content.js"></script>
+		<script src="content/plan.js"></script>
+		<script src="content/js/planUtils.js"></script>
+		<script src="content/js/homeUtils.js"></script>
+		<script src="lib/httpAPI.js"></script>
+	</head>
+
+	<body>
+		<div id="dialog">
+		</div>
+
+		<div id="main">
+			<div id="header"></div>
+			<div id="menu"></div>
+			<div id="content" class="content"></div>
+			<div id="footer"></div>
+		</div>
+
+		<script type="text/javascript">
+			var httpAPI = new HttpAPI();
+			initIndexScripts();
+		</script>
+	</body>
+</html>

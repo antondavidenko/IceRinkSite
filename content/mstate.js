@@ -1,0 +1,1 @@
+var inboxStates = {"Monday22ndofJanuary2018075215PM":"d","Monday22ndofJanuary2018075220PM":"d","Monday22ndofJanuary2018075126PM":"v","Monday22ndofJanuary2018074504PM":"v","Wednesday24thofJanuary2018121352AM":"v","Monday22ndofJanuary2018071440PM":"v"}

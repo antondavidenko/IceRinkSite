@@ -1,0 +1,33 @@
+﻿<script>
+    function validateLoginForm()
+    {
+        var params = {};
+        params.login = document.forms["loginForm"]["flogin"].value;
+        params.password = document.forms["loginForm"]["fpass"].value;
+
+        $.post("/php/auth.php", params)
+            .done(function (data) {
+                loginRespond(JSON.parse(data));
+            });
+
+        return false;
+    }
+
+    function loginRespond(data)
+    {
+        var pageURL = window.location.href;
+
+        console.log(data);
+        if (data.isLogged) {
+            window.location.href = pageURL.substr(0, pageURL.indexOf("?")) + "?login=true";
+        }
+    }
+</script>
+
+<div class="dialog-message">
+    <form class="dialog-form" id="loginForm" onsubmit="return validateLoginForm()">
+        <label for="flogin">Логин</label><input type="text" id="flogin" name="flogin" placeholder="" maxlength="50">
+        <label for="fpass">Пароль</label><input type="password" id="fpass" name="fpass" placeholder="" maxlength="50">
+    <input type="submit" value="OK">
+    </form>
+</div>

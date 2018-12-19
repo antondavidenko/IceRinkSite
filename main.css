@@ -1,0 +1,314 @@
+﻿#main {
+    background-color:#ffffff;
+    margin: auto;
+    padding: 0px;
+    max-width: 1920px;
+    min-width: 900px;
+}
+
+#header {
+    background-color:#b7d4f3;
+    color:#ffffff;
+    padding: 10px;
+    text-align: left;
+    font-size: 45px;
+}
+
+.logo-text {
+    width: 300px;
+    color:#ffffff;
+    padding: 0px;
+    text-align: left;
+    font-size: 45px;
+}
+
+.price1-bg {
+    background-color: #dfeeff;
+}
+.price2-bg {
+    background-color: #e1ffdf;
+}
+.price3-bg {
+    background-color: #ffecdf;
+}
+.price4-bg {
+    background-color: #fffedf;
+}
+
+#header-text {
+    padding: 0px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+#header-image {
+    vertical-align: middle;
+    width:248px;
+    height:88px;
+}
+
+.header-td-image{
+    padding: 0px;
+}
+
+.header-td-text{
+    padding: 5px;
+    background-color:#5294dc;
+}
+
+a.header-a:link, a.header-a:visited, a.header-a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.header-a:hover {
+    color: #a3c2e5;
+    text-decoration: underline;
+}
+
+#footer {
+    background-color:#5294dc;
+    color:#ffffff;
+    max-width: 1920px;
+    min-width: 900px;
+}
+
+.footer-content {
+    padding: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.footer-text {
+    text-align: left;
+    color:#ffffff;
+}
+
+#footer-image {
+    vertical-align: middle;
+    width:298px;
+    height:188px;
+}
+
+a.footer-a:link, a.footer-a:visited, a.footer-a:active {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#menu {
+    background-color:#5294dc;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.menu-separator {
+    color: #2d7fd9;
+}
+
+a.menu-item:link, a.menu-item:visited, a.menu-item:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.menu-item:hover {
+    color: #a3c2e5;
+    text-decoration: underline;
+}
+
+.selected-menu-item {
+    color: #a3c2e5;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 18px;
+}
+
+.content-text {
+    padding: 30px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.impressum-text
+{
+    width: 340px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#content-video {
+    margin: 0 auto;
+    width: 640px;
+    display: block;
+}
+
+.content-title {
+    color: #2d7fd9;
+    font-size: 36px;
+    text-align: center;
+    padding: 15px;
+}
+
+.img-home{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img-contact{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    background-color:#dddddd;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+.bordered {
+    border: 1px solid #cdcfd0;
+}
+
+.plan-separator {
+    font-size: 1px;
+    padding: 10px;
+}
+
+a.plan-item:link, a.plan-item:visited, a.plan-item:active {
+    color: #2d7fd9;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: #2d7fd9;
+    text-decoration: none;
+}
+
+.selected-date {
+    background-color:#5294dc;
+    color: #ffffff;
+}
+
+.selected-day {
+    color:#5294dc;
+}
+
+.calendarHeader {
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.des-cell{
+    width: 400px;
+    text-align: left;
+}
+
+.des-about-cell{
+    width: 200px;
+    text-align: left;
+}
+
+.time-cell{
+    width: 150px;
+}
+
+.centred {
+    margin: auto;
+}
+
+input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#planForm > input[type=text] {
+    margin: 1px;
+}
+
+input[type=submit], input[type=button] {
+    background-color: #5294dc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.short-input[type=text] {
+    width: 100px;
+}
+
+.mid-input[type=text] {
+    width: 500px;
+}
+
+input[type=submit]:hover {
+    background-color: #5294dc;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container-viewed {
+    border-radius: 5px;
+    background-color: #e1ffdf;
+    padding: 20px;
+}
+
+.container-deleted {
+    border-radius: 5px;
+    background-color: #ffecdf;
+    padding: 20px;
+}
+
+.gray-bg {
+    background-color: #f2f2f2;
+}
+
+#dialog {
+    padding: 20px;
+}
+
+.dialog-message {
+    width: 400px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
+}
+
+.dialog-form {
+    text-align: center;
+}
+
+.centred-text {
+    text-align: center;
+}
